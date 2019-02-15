@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trello</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+    <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+<header class="blue_gradation">
+    <div class="box" id="header_item">
+        <!-- <img src="../static/images/trello-logo-white.svg" id="logo"> -->
+        <button class="btn_hover">
+            <img id="logo" src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/trello-header-logos/af7af6ed478d3460709d715d9b3f74a4/trello-logo-white.svg">
+        </button>
+        <button id="head_btn">Go to Your Boards</button>
+    </div>
+</header>
+<div class="blue_gradation">
+    <div class="box" id="index1">
+        <div id="index1_1">
+            <h1>Trello lets you work more collaboratively and get more done.</h1>
+            <P> Trello’s boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible and rewarding way.</P>
+            <br>
+            <button class="index1_btn" id="index1_btn">Sign Up – It’s Free!</button>
+        </div>
+        <div>
+            <!--<img src="../static/images/hero-a.svg" id="index1_img"> -->
+            <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/308998dcb3ed5ab3d01217a4d24ffa03/hero-a.svg" id="index1_img">
+        </div>
+    </div>
+</div>
+<div class="box" id="index2">
+    <div>
+        <h1>Work with any team</h1>
+        <p>Whether it’s for work, a side project or even the next family vacation, Trello helps your team stay organized.</p>
+        <button id="index2_btn">Start doing →</button>
+    </div>
+    <div>
+        <!-- <img src="../static/images/updated-layouts-board.png" id="index2_img"> -->
+        <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/ec632c01f86f793bae5d9291c6858d69/updated-layouts-board.png" id="index2_img">
+    </div>
+</div>
+<div class="box" id="index3">
+    <div>
+        <!--  <img src="../static/images/updated-layouts-mobile.png" id="index3_img"> -->
+        <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/dda69d91a5cce7d5770bb88a996d1340/updated-layouts-mobile.png" id="index3_img">
+    </div>
+    <div>
+        <h1>Information at a glance</h1>
+        <p>Dive into the details by adding comments, attachments, due dates, and more directly to Trello cards. Collaborate on projects from beginning to end.</p>
+    </div>
+</div>
+<div class="box text_align" id="index4">
+    <div>
+        <h1>See how it works</h1>
+        <p>Go from idea to action in seconds with Trello’s intuitively simple </p>
+        <p>boards, lists, and cards.</p>
+    </div>
+</div>
+
+<div id="app">
+    <v-app id="inspire" class="box">
+        <v-carousel id="carosel">
+            <v-carousel-item v-for="(item,i) in carousel" :key="i" :src="item.src"></v-carousel-item>
+        </v-carousel>
+    </v-app>
+</div>
+
+<div class="box text_align" id="index6">
+    <div>
+        <h1>Trello your way</h1>
+        <p>Use Trello the way your team works best. We’ve got the flexibility &</p>
+        <p>features to fit any team’s style.</p>
+    </div>
+</div>
+
+<div class="box" id="index7">
+    <div class="columnbox">
+        <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/0cad30a99820b0d840a5b48635d00b6e/updated-layouts-collab.png" class="img_size">
+        <h3>Work With Any Team</h3>
+        <p>It's easy to get your entire team up and running with Trello. We've collected all of the boards and tools you need to succeed.</p>
+        <button class="index7_btn btn_hover">Build Your Dream Team</button>
+    </div>
+    <div class="columnbox">
+        <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/15e77c8347135120a438d17e38195e44/updated-layouts-platform.png" class="img_size">
+        <h3>A Productivity Platform</h3>
+        <p>It's easy to get your entire team up and running with Trello. We've collected all of the boards and tools you need to succeed.</p>
+        <button class="index7_btn btn_hover">Power-Up Your Workflow</button>
+    </div>
+    <div class="columnbox">
+        <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/6eaaf5e37ab67a8ed6cd7764660513b9/updated-layouts-sync.png" class="img_size">
+        <h3>Always In Sync</h3>
+        <p>No matter where you are, Trello stays in sync across all of your devices. Collaborate with your team anywhere, from sitting on the bus to sitting on the beach.</p>
+        <div id="index7_1">
+            <button class="market_btn_size btn_hover"><img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/eebf313cb223112b503b7322173b013c/btn-appstore-black.png" class="market_img_size"></button>
+            <button class="market_btn_size btn_hover"><img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/bcde9868a665af4ab4efe460c46fbc7b/btn-playstore-black.png" class="market_img_size"></button>
+        </div>
+    </div>
+</div>
+<div class="box" id="index8">
+    <div id="index8_1">
+        <h1>Work smarter with Trello</h1>
+        <br>
+        <p>Companies of all shapes and sizes use Trello.</p>
+        <div id="index8_2">
+            <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/42feb2498e08d8fbd357e19d331da908/logo-adobe.svg">
+            <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/83b3c2b3542d1ce997306dd2c76a898d/logo-kickstarter.svg">
+            <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/99b35981e7c571708532ba39f0764aeb/logo-national-geographic.svg">
+            <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/4838c7256b43105d3abe0631ac1bb72c/logo-google.svg">
+            <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/759e9aaacc706fd1f2d5f81b1a76b768/logo-fender.svg">
+        </div>
+        <br><br>
+        <button id="index8_btn">Find out how →</button>
+    </div>
+</div>
+<div class="box" id="index9">
+    <div>
+        <h1>Start Planning Today</h1>
+        <p>Sign up and become one of the millions of people around the world using Trello to get more done.</p>
+        <button class="index1_btn">Get Started – It’s Free!</button>
+    </div>
+</div>
+<footer>
+    <div class="box">
+        <div>
+            <select>
+                <option>English (US)</option>
+                <option>한국어</option>
+            </select>
+            <div id="index10">
+                <a href="">Tour</a>
+                <a href="">Pricing</a>
+                <a href="">Apps</a>
+                <a href="">Jobs</a>
+                <a href="">Blog</a>
+                <a href="">Developers</a>
+                <a href="">About</a>
+                <a href="">Help</a>
+                <a href="">Legal</a>
+                <a href="">Cookie Settings</a>
+                <a href="">Privacy</a>
+            </div>
+            <div id="index10_1">
+                <img  id="index10_img" src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/6cdbcb3dcf82bba860f1768d184161ee/atlassian-logo-gray-small.svg">
+                <p>© Copyright 2019. All rights reserved.</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+<style>
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+
+    body{
+        margin: 0 auto;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .blue_gradation {
+        background : linear-gradient( to right,#0178BF , #5068C5 );
+    }
+
+    .box {
+        display: flex;
+        max-width: 900px;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .text_align > *
+    {
+        text-align: center;
+    }
+
+    .columnbox{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .img_size
+    {
+        max-width: 50%;
+        height: auto;
+    }
+
+
+    .market_img_size
+    {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .market_btn_size
+    {
+        margin: auto;
+        max-width: 50%;
+    }
+
+
+
+    .btn_hover:hover{
+        background-color: #dddddd;
+    }
+
+
+    .index7_btn{
+        margin-left: auto;
+        background-color: #E2E4E6;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+
+
+    #header_item{
+        height: 100%;
+    }
+
+    #logo {
+        max-width: 100px;
+        max-height : 50px;
+    }
+
+    #head_btn {
+        margin-left: auto;
+        background-color: #295EA5;
+        border: none;
+        color: white;
+        padding: 10px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        border-radius: 4px;
+    }
+
+    #head_btn:hover {
+        background-color: #285292;
+        color: white;
+    }
+
+    #index1_img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #index1 {
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        height: 420px;
+    }
+
+    #index1_1 > * {
+        color: white;
+    }
+
+    #index1_btn:hover{
+        color: #dddddd;
+    }
+    .index1_btn
+    {
+        margin-left: auto;
+        background-color: #36B37E; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        border-radius: 4px;
+    }
+
+    .index1_btn:hover{
+        color: #dddddd;
+    }
+
+
+    #index2_img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #index2 {
+        margin-top: 30px;
+    }
+
+    #index2_btn
+    {
+        margin-left: auto;
+        background-color: #EBECF0; /* Green */
+        border: none;
+        padding: 12px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+
+    #index2_btn:hover
+    {
+        color: #dddddd;
+    }
+
+    #index3
+    {
+        padding-bottom: 50px;
+    }
+
+    #index3_img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+
+    #inspire {
+        max-height: 520px;
+        margin-bottom: 50px;
+    }
+
+    #carosel{
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    #index7{
+        margin-bottom: 50px;
+    }
+
+    #index7 > *{
+        align-items: center;
+        text-align: center;
+    }
+
+    #index7_1{
+        flex-direction:row;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #index7_1 > *
+    {
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    #index8{
+        background : linear-gradient( to right,#44558E , #6B668C );
+        height: 280px;
+        align-items: center;
+        border-radius: 8px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    #index8 > *
+    {
+        text-align: center;
+    }
+
+
+    #index8_1 > *{
+        align-items: center;
+        color: white;
+    }
+
+    #index8_2 > *
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #index8_btn {
+        margin-left: auto;
+        background-color: #E2E4E6;
+        border: none;
+        padding: 12px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+        color: black;
+    }
+
+    #index8_btn:hover{
+        background: #dddddd;
+    }
+
+    #index9{
+        margin-bottom: 80px;
+    }
+    #index9 >*{
+        text-align: center;
+    }
+
+    #index10 {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #index10 > *{
+        text-underline: black;
+    }
+
+    #index10_1{
+        display: flex;
+    }
+    #index10_img{
+        max-width: 28%;
+        height: auto;
+    }
+
+
+</style>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data () {
+      return {
+        carousel: [
+          {
+            src: 'https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/ee4128a9d3b7d5b9e8993af34fe0b58a/slide-1.png',
+            caption: 'Create a board for any project, give it a name, and invite your team.'
+          },
+          {
+            src: 'https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/7f413dbdcc8761405c58ff85e11d5799/slide-2.png'
+          },
+          {
+            src: 'https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/b241475a836143591358a3d71f169c1c/slide-3.png'
+          },
+          {
+            src: 'https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/a9caa8024f5bc167dafb66628dc6e176/slide-4.png'
+          },
+          {
+            src: 'https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/56318164782a63a9cace02b02b6a440e/slide-5.png'
+          }
+        ],
+        selectbox: ['Foo', 'Bar', 'Fizz', 'Buzz']
+      }
+    }
+  })
+</script>
+
